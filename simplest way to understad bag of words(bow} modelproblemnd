@@ -1,0 +1,28 @@
+The Bow model is used for changing the arbitrary taxt into fixed length vector's 
+by counting hoewmany times each word apears. this process often ts as vectorization.
+
+lets understand this with the a simple quick example,
+
+we have a data like 
+ > dog like bone 
+ > dog eat bone
+ > dog don't like cats
+ 
+ we'll first refers each all text as document
+ 
+ Step 1. Determine the vocabulary
+  in our above data we have 3 document we first take each word without 
+  repeating. there are three documents above.
+  words are, 
+  {dog,like,bone,eat,don't,cats}
+  
+ Step 2. count
+  in step 2 we count all word how many its come. 
+  
+ 
+                         dog  like  bone  eat  don't  cats
+  dog like bone       :   1     1     1    0    0       0     
+  dog eat bone dog happy       :   1     1     2    1    0       
+  dog don't like cats :
+  
+  
